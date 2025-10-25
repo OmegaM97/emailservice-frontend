@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { toast, Toaster } from "react-hot-toast";
 import { LogIn, UserPlus, ClipboardCopy } from "lucide-react";
 
@@ -603,6 +604,7 @@ Content-Type: application/json
           </div>
         </div>
       </section>
+      <Footer darkMode={darkMode} />
     </div>
   );
 }
